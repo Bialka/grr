@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # our own
     'grr.horse',
+    'grr.player',
 ]
 
 MIDDLEWARE_CLASSES = [
