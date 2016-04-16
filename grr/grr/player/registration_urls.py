@@ -2,11 +2,13 @@
 # encoding: utf-8
 
 from django.conf.urls import url
-
 from django.contrib.auth import views as auth_views
 
+from grr.player import registration_views
+
 urlpatterns = [
-    url(r'^$', auth_views.login, name='home'),
+    url(r'^$', registration_views.home, name='home'),
+
     url(r'^zaloguj/$', auth_views.login, name='login'),
     url(r'^wyloguj/$', auth_views.logout, name='logout'),
     url(r'^zmiana_hasla/$', auth_views.password_change, name='password_change'),
