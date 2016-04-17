@@ -1,0 +1,7 @@
+Ustawienia użytkownika <span>{{ user.username }}</span>
+<hr>
+<form method="post" action="">
+	{% csrf_token %}
+	{{ form }}
+	<input type="submit" value="zapisz" />
+</form>

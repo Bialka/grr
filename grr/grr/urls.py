@@ -20,4 +20,5 @@ urlpatterns = [
     url(r'^', include('grr.player.registration_urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^konie/', include('grr.horse.urls', namespace='horse')),
+    url(r'^gracze/', include('grr.player.urls', namespace='player')),
 ]

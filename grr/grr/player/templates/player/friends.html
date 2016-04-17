@@ -1,0 +1,6 @@
+Znajomi użytkownika <span>{{ request.user.username }}</span>:
+<ul>
+	{% for friend in friends %}
+		<li>{{ friend.username }}</li>
+	{% endfor %}
+</ul>
